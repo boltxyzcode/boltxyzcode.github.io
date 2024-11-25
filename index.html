@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.1/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.1/dist/js/materialize.min.js"></script>
+
+    <style>
+        #webbuild {
+            cursor: pointer;
+            transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+        }
+
+        .zoomed {
+            transform: scale(10);
+            opacity: 0;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .card img {
+            border-radius: 8px;
+        }
+    </style>
+
+    <title>Boltxyz's Portfolio</title>
+</head>
+<body>
+    <div class="center">
+        <h2>Hello, I am <u>Boltxyz</u>.</h2>
+        <p>
+            I'm a passionate web developer that tries to be honest. I sometimes make Android apps and YouTube videos. That's it. Now go check out my projects.
+        </p>
+        <p>Programming Languages i know:</p>
+        <p>HTML, CSS, JavaScript, Python, Lua, Batch (idk if it counts) and the VERY BASICS of C++.</p>
+        <p><small>(yes i can't program in TypeScript 💀)</small></p>
+        <p>
+            <a href="https://github.com/boltxyzcode" class="btn filled icon-right rounded waves-effect waves-light">GitHub <i class="material-icons">code</i></a>
+            <a onclick="alert('Email: plwmail@duck.com')" class="btn tonal icon-right rounded waves-effect waves-light">Contact Me <i class="material-icons">email</i></a>
+        </p>
+        <br><br><br><br>
+        <h3>Projects</h3>
+        <hr>
+        <p>Click on the project logo to go to the website.</p>
+        <br>
+        <div class="card">
+            <img src="https://webbuild.js.org/webbuild.png" width="100" id="webbuild">
+            <h4>WebBuild</h4>
+            <p>
+                WebBuild is a simple and user-friendly website builder designed for anyone to create web pages.
+            </p>
+            <p>
+                <strong>Key Features:</strong>
+                <ul>
+                    <li>100% client-side functionality</li>
+                    <li>No server required - data stays private</li>
+                    <li>Designed to be intuitive for beginners</li>
+                </ul>
+            </p>
+            <img src="webbuild.png" width="500">
+        </div>
+        <p>And many more that i didn't list here beacuse i didn't have time or aren't finished...<p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
