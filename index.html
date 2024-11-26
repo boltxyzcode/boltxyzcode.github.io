@@ -3,69 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.1/dist/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.1/dist/js/materialize.min.js"></script>
-
-    <style>
-        #webbuild {
-            cursor: pointer;
-            transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-        }
-
-        .zoomed {
-            transform: scale(10);
-            opacity: 0;
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        .card img {
-            border-radius: 8px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Boltxyz's Portfolio</title>
 </head>
 <body>
-    <div class="center">
-        <h2>Hello, I am <u>Boltxyz</u>.</h2>
-        <p>
-            I'm a passionate web developer that tries to be honest. I sometimes make Android apps and YouTube videos. That's it. Now go check out my projects.
-        </p>
-        <p>Programming Languages i know:</p>
-        
-        <p><img width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /> <img width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /> <img width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /> <img width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" /> <img width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" /></p>
-        <p><small>(yes i can't program in TypeScript 💀)</small></p>
-        <p>
-            <a href="https://github.com/boltxyzcode" class="btn filled icon-right rounded waves-effect waves-light">GitHub <i class="material-icons">code</i></a>
-            <a onclick="alert('Email: plwmail@duck.com')" class="btn tonal icon-right rounded waves-effect waves-light">Contact Me <i class="material-icons">email</i></a>
-        </p>
-        <br><br><br><br>
-        <h3>Projects</h3>
-        <hr>
-        <p>Click on the project logo to go to the website.</p>
+    <div class="has-text-centered">
         <br>
-        <div class="card">
-            <img src="https://webbuild.js.org/webbuild.png" width="100" id="webbuild">
-            <h4>WebBuild</h4>
-            <p>
-                WebBuild is a simple and user-friendly website builder designed for anyone to create web pages.
-            </p>
-            <p>
-                <strong>Key Features:</strong>
-                <ul>
-                    <li>100% client-side functionality</li>
-                    <li>No server required - data stays private</li>
-                    <li>Designed to be intuitive for beginners</li>
-                </ul>
-            </p>
-            <img src="webbuild.png" width="500">
+        <h1 class="title">Boltxyz</h1>
+        <p>Location: Poland</p>
+        <p>I'm a web developer. 🤯</p>
+        <button onclick="window.location.href='https://github.com/boltxyzcode'" class="button has-background-primary has-text-black">GitHub</button> <button onclick="alert('E-Mail: plwmail@duck.com')" class="button has-background-white has-text-black">Contact Me</button>
+        <br>
+        <br>
+        <h2 class="subtitle">Technologies</h2>
+        <div id="a" class="columns is-multiline">
+            <div class="column"><img width="175" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" /><p>TypeScript</p></div>
+            <div class="column"><img width="175" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /><p>HTML</p></div>
+            <div class="column"><img width="175" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /><p>CSS</p></div>
+            <div class="column"><img width="175" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" /><p>C++</p></div>
+            <div class="column"><img width="175" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" /><p>Python</p></div>
+            <div class="column"><img width="175" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" /><p>PHP</p></div>
+        </div>
+
+        <div id="more" style="display: none;" class="columns is-multiline">
+            <div class="column"><img width="175" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bulma/bulma-plain.svg" /><p>Bulma</p></div>
+            <div class="column"><img width="175" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materializecss/materializecss-original.svg" /><p>MaterializeCSS</p></div>
+            <div class="column"><img width="175" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" /><p>Bootstrap</p></div>
+            <div class="column"><img width="175" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /><p>JavaScript</p></div>
+            <div class="column"><img width="175" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg" /><p>Lua</p></div>
+        </div>
+        <a onclick="viewMore()" href="#">View more...</a>
+        <br>
+        <h1 class="title">My Projects</h1>
+
+        <!-- WebBuild Project Card -->
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="title is-4">WebBuild</h2>
+                        <p class="subtitle">A simple, free website builder with no coding required.</p>
+                        <p>WebBuild allows you to create stunning websites without the need for coding. It's open-source, free, and user-friendly!</p>
+                        <a href="https://webbuild.js.org" class="button is-link is-fullwidth" target="_blank">Visit WebBuild</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
+    <script src="script.js"></script>
 </html>
